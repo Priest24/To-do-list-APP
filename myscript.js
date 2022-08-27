@@ -1,7 +1,4 @@
-//document.getElementById("new-doc").ondblclick = function() {
-// document.getElementById("high").innerHTML "";
-//}
-
+window.alert('one click will strike the list out and two will clear the list');
 
 const addList = document.querySelector('.add-list');
 
