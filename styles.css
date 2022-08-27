@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Raleway:ital@1&display=swap');
+:root {
+    --icons-color: #4c5773;
+    --icons-bg-color: #e2e6e9;
+    --shadow-dark-color: #d3dae7;
+    --shadow-light-color: #fff;
+    --main-bg-color: #ecf0f3;
+    --box-shadow: 1rem 1rem 1rem var(--shadow-dark-color), -1rem -1rem 1rem var(--shadow-light-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--main-bg-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.app {
+    width: 300px;
+    height: 500px;
+    background: var(--main-bg-color);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.app .app-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.app-info i {
+    font-size: 25px;
+    background: var(--icons-color);
+    padding: 0.5rem;
+    color: var(--main-bg-color);
+    margin-right: 1rem;
+    border-radius: 30%;
+}
+
+h1 {
+    color: var(--icons-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.todolist-container {
+    width: 100%;
+    height: 85%;
+}
+
+.todolist-container .input-field {
+    background: var(--main-bg-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: var(--main-bg-color);
+}
+
+.input-field input[type="text"] {
+    margin-left: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+.input-field i {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-right: 1rem;
+}
+
+.new-list {
+    width: 100%;
+    height: 40px;
+    background: var(--icons-bg-color);
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
